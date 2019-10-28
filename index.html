@@ -10,19 +10,24 @@
 
     <title>Loan Calculator</title>
   </head>
+  <style>
+      #results, #loading {
+          display: none;
+      }
+  </style>
   <body class="bg-dark">
     <div class="container">
         <div class="row">
             <div class="col-md-6 mx-auto">
                 <div class="card card-body text-center mt-5">
-                    <h1 class="headeing display-5 pb-3">Loan Calculator</h1>
+                    <h1 class="heading display-5 pb-3">Loan Calculator</h1>
                     <form id="loan-form">
                         <div class="form-group">
                             <div class="input-group">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text">$</span>
                                 </div>
-                                <input type="number" class="form-control" id="amout" placeholder="Loan Amount">
+                                <input type="number" class="form-control" id="amount" placeholder="Loan Amount">
                             </div>
                         </div>
                         <div class="form-group">
@@ -43,9 +48,9 @@
                         </div>
                     </form>
                     <!-- LOADER HERE -->
-                    <!-- <div id="loading">
+                    <div id="loading">
                         <img src="img/loading.gif" alt="">
-                    </div> -->
+                    </div>
                     <!-- RESULTS -->
                     <div id="results">
                         <h5>Results</h5>
@@ -63,7 +68,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text">Total Payment</span>
                                 </div>
-                                <input type="number" class="form-control" id="Total-payment" disabled>
+                                <input type="number" class="form-control" id="total-payment" disabled>
                             </div>
                         </div>
 
